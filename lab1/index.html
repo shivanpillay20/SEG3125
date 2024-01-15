@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Playstation.com UI Survey</title>
+    <title>Game store UI Survey</title>
   </head>
 
   <body>
     <header>
-      <h1>Playstation.com UI Survey</h1>
+      <h1>Game Store UI Survey</h1>
       <p>Help us improve by providing your valuable feedback.</p>
     </header>
+    <br>
 
-    <img id="website-img" src="Playstation.png" alt="Website Page" />
+    <h2>We get our games on: <a href="https://www.playstation.com/en-gb/"></a> </h2>	
+    
+    <a href="https://www.playstation.com/en-gb/"><img src="download.png" alt = "PlayStation" ></a>
+    <br>
+    
 
     <section id="survey-form">
       <form action="#" method="post">
@@ -83,12 +88,14 @@
           <input type="number" name="recommendation" min="0" max="10" />
         </div>
 
-        <button type="submit">Submit Survey</button>
+        <button id="submitButton" type="button" class="block">
+          Submit your form!
+        </button>
+          
+        <p id="signature">Website designed by Shivan,Damien and Ayoub!</p>
       </form>
     </section>
 
-    <footer>
-      <p>Website created by Shivan, Damien and Ayoub!</p>
-    </footer>
+   
   </body>
 </html>
