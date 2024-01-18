@@ -1,19 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 255);
   color: #333;
   margin: 0;
   padding: 0;
 }
-
-header,
-footer {
-  background-color: #007bff;
+header {
+  background-color: #007cc7;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
-
+.sec_header {
+  margin-left: 10px;
+}
 #website-img {
   display: block;
   margin: 20px auto;
@@ -24,7 +24,7 @@ footer {
 }
 
 #website-img:hover {
-  transform: scale(1.2); /* Adjust the scale factor for zooming in */
+  transform: scale(1.1); /* Adjust the scale factor for zooming in */
 }
 
 #survey-form {
@@ -57,7 +57,7 @@ input[type="number"] {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #007cc7;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -70,8 +70,15 @@ button:hover {
 }
 
 footer {
-  background-color: #007bff;
-  color: #fff;
+  color: #333;
+  margin-top: 5px;
   padding: 10px;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
