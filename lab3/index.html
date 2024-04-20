@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+	<link href="style.css" rel="stylesheet" type="text/css">
+  <title>Farmboys Online Store</title>
+</head>
+<h1>Farmboys Online Store</h1>
+<hr id="titleLine">
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="mainContainer">
+	<!-- Add a breadcrumb container -->
+<ul class="breadcrumb">
+	<li><span id="clientBreadcrumb" onclick="openInfo(event, 'Client')">Client</span></li>
+	<li><span id="productBreadcrumb" onclick="openInfo(event, 'Products')">Products</span></li>
+
+	<li><span id="cartBreadcrumb" onclick="openInfo(event, 'Cart')">Cart</span></li>
+</ul>
+	<div class="content">
+	
+		<div class="font-size-change">
+			<label for="text-size">Text Size:</label>
+			<input type="radio" id="small" name="text-size" value="small" onclick="changeTextSize('small')"> Small
+			<input type="radio" id="medium" name="text-size" value="medium" onclick="changeTextSize('medium')" checked> Medium
+			<input type="radio" id="big" name="text-size" value="big" onclick="changeTextSize('big')"> Big
+		</div>
+		
+		
+		<!-- Tab content -->
+		<div id="Client" class="tabcontent">
+		<h3>Welcome! Buy your favourite groceries now at the best prices!</h3>
+		<p>Choose your favorite products.</p>
+			Choose from our wide range of categories:
+			<form id="restrictions" name="restrictions">
+			
+				<input type="radio" id="Vegetarian" name="restriction" value="Vegetarian" onclick="populateListProductChoices('Vegetarian', 'displayProduct')">
+				<label for="Vegetarian">Vegetarian</label><br>
+				<input type="radio" id="GlutenFree" name="restriction" value="GlutenFree" onclick="populateListProductChoices('GlutenFree', 'displayProduct')">
+<label for="GlutenFree">GlutenFree</label><br>
+<input type="radio" id="Vegetable" name="restriction" value="Vegetable" onclick="populateListProductChoices('Vegetable', 'displayProduct')">
+<label for="None">Vegetable</label><br>
+<input type="radio" id="Fruit" name="restriction" value="Fruit" onclick="populateListProductChoices('Fruit', 'displayProduct')">
+<label for="None">Fruit</label><br>
+<input type="radio" id="Dairy" name="restriction" value="Dairy" onclick="populateListProductChoices('Dairy', 'displayProduct')">
+<label for="Organic">Dairy</label><br>
+<input type="radio" id="Meat" name="restriction" value="Meat" onclick="populateListProductChoices('Meat', 'displayProduct')">
+<label for="None">Meat</label><br>
+<input type="radio" id="None" name="restriction" value="None" onclick="populateListProductChoices('None', 'displayProduct')">
+<label for="None">None</label><br>
+					
+					
+				  
+				 
+</form>
+
+		</div>
+		
+		<div id="Products" class="tabcontent" style="display: none;">
+			<h3>Your choice</h3>
+			<p>We preselected products based on your preferences!</p>
+			   Choose groceries to buy:
+			   <div id="displayProduct"></div>
+			   <button id="addCart" type="button" class="block" onclick="selectedItems()">
+				  Click here to add to your cart!
+			  </button>
+		  </div>
+		  
+		  
+		  <div id="Cart" class="tabcontent" style="display: none;">
+			<h3>Cart</h3>
+			<p>Your cart content:</p>
+			<div id="displayCart"></div>
+		  </div>
+		  
+		  <script src="groceries.js"></script>
+		  <script src="main.js"></script>
+		  <div class="page-footer">
+			<signature>Website designed by Shivan,Damien and Ayoub!</signature><br>
+		  </div>
+		  
+		  </body>
+		  </html>

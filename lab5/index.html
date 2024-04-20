@@ -1,0 +1,300 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>uOttawa Cuts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="alert.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-1 my-3 border bg-dark text-white">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+            <div class="container-fluid">
+                <a id="navbar-title" class="navbar-brand" href="#">uOttawa Cuts</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#services">Our Services</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link " href="#stylists">Our Stylists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#appointment">Appointment/Payment</a>
+                        </li>   
+                    </ul>
+                    
+                    <ul id="logo" class="ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"><img src="Hair Salon Logo.png" alt="Company Logo" class="img-fluid" style="max-width: 150px;"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </nav>
+    
+    </div>
+    
+
+    <!-- Section for Address and Google Maps -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Visit Us</h2>
+                <p>Our address: 75 Laurier Ave E, Ottawa, ON K1N 6N5</p>
+                <!-- Google Maps iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2077.7742638572395!2d-75.6825706752213!3d45.42294509538218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050a6db98d73%3A0x188a59c3622fdbae!2sUniversit%C3%A9%20d&#39;Ottawa!5e0!3m2!1sfr!2sca!4v1707254597113!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="container">
+        <h2><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+            <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+          </svg></i>Our Services</h2>
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="SimpleCut.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Simple Cut</h3>
+                      <p class="card-text">Our Simple Cut service provides a basic haircut to keep you looking sharp and neat. Our skilled stylists will give you a precise trim to maintain your preferred hairstyle.</p>
+                      <p>Price: $25</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Hairwash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Hairwash</h3>
+                      <p class="card-text">Indulge in our Hairwash service to rejuvenate your scalp and hair. Enjoy a relaxing shampoo and conditioning treatment that leaves your hair feeling clean, soft, and revitalized.</p>
+                      <p>Price: $20</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Beard.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Beard</h3>
+                      <p class="card-text">Enhance your grooming routine with our Beard service. Our expert barbers will shape and trim your beard to perfection, helping you achieve a polished and well-groomed look.</p>
+                      <p>Price: $15</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="BlowoutCurls.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Blowout with Curls</h3>
+                      <p class="card-text">Experience the ultimate styling with our Blowout with Curls service. Our stylists will blow-dry your hair to add volume and texture, then expertly create beautiful curls for a glamorous finish.</p>
+                      <p>Price: $35</p>
+                    </div>
+                </div>
+           
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="HairExtension.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Hair Extensions</h3>
+                      <p class="card-text">Transform your look with our Hair Extensions service. Whether you desire length, volume, or both, our high-quality extensions will give you the luxurious hair you've always wanted.</p>
+                      <p>Price: $55</p>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="toner.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Toner Service</h3>
+                      <p class="card-text">Achieve vibrant and glossy hair with our Toner Service. Our professional toning treatment helps neutralize brassiness, enhance color vibrancy, and add shine for a flawless finish.</p>
+                      <p>Price: $30</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <div id="stylists" class="container">
+        <h2><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+          </svg>Meet Our Stylists</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sarah.jfif" alt="Stylist 1" style="height: 231.58px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Emily</h5>
+                        <p class="card-text">Specializes in Simple Cut and Hairwash services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mike.jfif" alt="Stylist 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mike</h5>
+                        <p class="card-text">Expert in Beard grooming and Blowout with Curls.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="emily.jfif"  alt="Stylist 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah</h5>
+                        <p class="card-text">Proficient in Hair Extensions and Toner services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="appointment" class="container">
+        
+            <div class = "book"> 
+                <div class="container-fluid">
+                    <div class = "row" >
+                            <div class="col-sm-12 pt-2" >
+                                <h3><svg class="mr-2 " xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-event-fill" viewBox="0 0 16 16">
+                                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
+                                  </svg>Want to book an appointment?</h3>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class = "appointment"><h4>The services we propose:</h4></p><br>
+            <div class="form-check">
+                
+
+
+                <!-- <p3>what types of services do you want?</p3> -->
+                <input type="checkbox" class="form-check-input" id="serviceCheck1">
+                <label class="form-check-label" for="serviceCheck1">Simple Cut</label><br>
+                <input type="checkbox" class="form-check-input" id="serviceCheck2">
+                <label class="form-check-label" for="serviceCheck2">Hairwash</label><br>
+                <input type="checkbox" class="form-check-input" id="serviceCheck3">
+                <label class="form-check-label" for="serviceCheck3">Beard</label><br>
+                <input type="checkbox" class="form-check-input" id="serviceCheck3">
+                <label class="form-check-label" for="serviceCheck3">Blowout with curls</label><br>
+                <input type="checkbox" class="form-check-input" id="serviceCheck3">
+                <label class="form-check-label" for="serviceCheck3">Hair extensions</label><br>
+                <input type="checkbox" class="form-check-input" id="serviceCheck3">
+                <label class="form-check-label" for="serviceCheck3">Toner service</label><br>
+            </div>
+            <br>
+            
+            
+            
+
+            <form name="form">
+                <div class="form-group">
+                    <label for="stylistChoice" class="col-sm-12">Choose Your Stylist</label>
+                    <select class="form-control" id="stylistChoice" name="stylistChoice">
+                        <option value="sarah">Sarah</option>
+                        <option value="mike">Mike</option>
+                        <option value="mike">Emily</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <p class="appointment"></p>
+                        <label for="dateTimeInput" class="col-sm-12">Choose your date and time</label>
+                        <div class="d-inline-flex">
+                            <input class="form-control me-2" type="text" name="dateInput" id="dateInput" placeholder="YYYY-MM-DD">
+                            <input class="form-control" type="time" id="timeInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="appointment"></p>
+                    <label for="email" class="col-sm-12">Your Email</label>
+                    <input type="email" class="form-control" name="emailAddress" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <p class="appointment"></p>
+                    <label for="phoneNumber" class="col-sm-12">Your phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" rows="1" placeholder="Enter phone number"></textarea>
+                    <small>
+                        You will be sent a confirmation message for your appointment
+                    </small>
+                </div>
+                
+                
+            </form>  
+                <div class="payment-info">
+                    <div>
+                        <h3><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"/>
+                          </svg>Confirm Payment</h3>
+        
+                        <div class="form-group">
+                            <label for="cname">CARDHOLDER NAME</label>
+                            <input type="text" id="cardholderName" name="name" class="form-control" placeholder="First and Last Name"title="We ask you to input your full name.">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="ccnum">Card Number</label>
+                            <input type="text" id="cardnumber" name="cardnumber" class="form-control" placeholder="Card Number"title="Enter 16 digits" required>
+                        </div>
+        
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="expirydate">Expiry Date</label>
+                                <input type="text" id="expirydate" name="expirydate" class="form-control" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" name="cvv" class="form-control" placeholder="Last 3 digits"title="Last 3 digits at the back of your card">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <button onclick="validateForm()" type="button" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+</body>
+</html>

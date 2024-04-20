@@ -1,0 +1,133 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+h1 {
+  background-color: #252e3e;
+  color: #b3b6bf;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+#titleLine {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 250px;
+  width: 20%;
+  height: 232px;
+  background-color: #252e3e;
+}
+
+.tablinks {
+  padding: 6px 8px 6px 16px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.tablinks:hover {
+  cursor: pointer;
+  color: #ddd;
+}
+
+.tablinks.active {
+  background-color: #535964;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 0 12px 12px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.product-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer {
+  padding: 5px;
+  text-align: center;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bolder; /* Example: Make the label bold for the selected radio button */
+}
+
+#addCart {
+  margin: 6px 0;
+}
+
+.font-size-change {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 0;
+}
+/* Style the list */
+.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+ul.breadcrumb {
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul.breadcrumb span {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ul.breadcrumb span.activeBreadcrumb {
+  color: #000;
+}
